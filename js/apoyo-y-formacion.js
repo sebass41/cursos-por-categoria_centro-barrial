@@ -9,7 +9,7 @@ const cursos = [
         costo: "$ 500 mensual",
         docente: "Matías Otte",
         whatsapp: "59891002902",
-        imagen: "../assets/flyers/herramientas-digitales.jpg"
+        imagen: "./assets/flyers/herramientas-digitales.jpg"
     },
 
     {
@@ -20,7 +20,7 @@ const cursos = [
         costo: "$ 250 por clase",
         docente: "Juan Froste",
         whatsapp: "59898626661",
-        imagen: "../assets/flyers/ajedrez.jpg"
+        imagen: "./assets/flyers/ajedrez.jpg"
     },
 
     {
@@ -31,7 +31,7 @@ const cursos = [
         costo: "$ 450 por clase",
         docente: "Andrea Tourn",
         whatsapp: "59899933662",
-        imagen: "../assets/flyers/apoyo-liceal.jpeg"
+        imagen: "./assets/flyers/apoyo-liceal.jpeg"
     },
     {
         nombre: "Reparación de celulares",
@@ -41,7 +41,7 @@ const cursos = [
         costo: "$ 3500 por mes",
         docente: "Julio Brites",
         whatsapp: "59899002332",
-        imagen: "../assets/flyers/reparacion-de-celulares.jpeg"
+        imagen: "./assets/flyers/reparacion-de-celulares.jpeg"
     }
 ];
 

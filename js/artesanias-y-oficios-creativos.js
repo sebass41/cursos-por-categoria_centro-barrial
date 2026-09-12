@@ -9,7 +9,7 @@ const cursos = [
         costo: "$ 3000 por curso completo",
         docente: "Analía González",
         whatsapp: "59899421622",
-        imagen: "../assets/flyers/manicura.jpg"
+        imagen: "./assets/flyers/manicura.jpg"
     },
 
     {
@@ -20,7 +20,7 @@ const cursos = [
         costo: "$ 350 por mes",
         docente: "María de los Milagros Nocetti",
         whatsapp: "59891486672",
-        imagen: "../assets/flyers/crochet.jpg"
+        imagen: "./assets/flyers/crochet.jpg"
     },
 
     {
@@ -31,7 +31,7 @@ const cursos = [
         costo: "$ 850 estimado",
         docente: "Verónica Janavel",
         whatsapp: "59898806186",
-        imagen: "../assets/flyers/costura-dinamica.jpg"
+        imagen: "./assets/flyers/costura-dinamica.jpg"
     },
     {
         nombre: "Jabones y Velas",
@@ -41,7 +41,7 @@ const cursos = [
         costo: "$ 850 estimado",
         docente: "Verónica Janavel",
         whatsapp: "59898806186",
-        imagen: "../assets/flyers/jabones-y-velas.jpg"
+        imagen: "./assets/flyers/jabones-y-velas.jpg"
     },
     {
         nombre: "Kokedamas",
@@ -51,7 +51,7 @@ const cursos = [
         costo: "$ 850 estimado",
         docente: "Verónica Janavel",
         whatsapp: "59898806186",
-        imagen: "../assets/flyers/kokedamas.jpg"
+        imagen: "./assets/flyers/kokedamas.jpg"
     }
 ];
 

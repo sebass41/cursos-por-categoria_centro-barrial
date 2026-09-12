@@ -9,7 +9,7 @@ const cursos = [
         costo: "$ 1100 dos veces por semana y $ 800 una vez por semana",
         docente: "Gabriela Fromaget",
         whatsapp: "59892772677",
-        imagen: "../assets/flyers/yoga-en-sillas.jpg"
+        imagen: "./assets/flyers/yoga-en-sillas.jpg"
     },
 
     {
@@ -20,7 +20,7 @@ const cursos = [
         costo: "$ 1200 por mes",
         docente: "María de los Milagros Nocetti",
         whatsapp: "59891041599",
-        imagen: "../assets/flyers/yoga-integral-comunitario.jpg"
+        imagen: "./assets/flyers/yoga-integral-comunitario.jpg"
     },
 
     {
@@ -31,7 +31,7 @@ const cursos = [
         costo: "$ 1000 por mes",
         docente: "Marelene Carro",
         whatsapp: "59896982498",
-        imagen: "../assets/flyers/taller-de-educacion-emocional.jpeg"
+        imagen: "./assets/flyers/taller-de-educacion-emocional.jpeg"
     },
     {
         nombre: "Meditación y mindfulness",
@@ -41,7 +41,7 @@ const cursos = [
         costo: "$ 1000 por mes",
         docente: "Flavia Silveira",
         whatsapp: "59898219513",
-        imagen: "../assets/flyers/meditacion-y-mindfulness.jpg"
+        imagen: "./assets/flyers/meditacion-y-mindfulness.jpg"
     },
     {
         nombre: "Clases de yoga",
@@ -51,7 +51,7 @@ const cursos = [
         costo: "$ 350 por clase",
         docente: "Mariana Rodríguez",
         whatsapp: "59892877497",
-        imagen: "../assets/flyers/yoga.jpg"
+        imagen: "./assets/flyers/yoga.jpg"
     }
 ];
 

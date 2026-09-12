@@ -9,7 +9,7 @@ const cursos = [
         costo: "$ 800 por mes",
         docente: "Yéssica Ramírez",
         whatsapp: "59899791845",
-        imagen: "../assets/flyers/teatro.jpeg"
+        imagen: "./assets/flyers/teatro.jpeg"
     },
 
     {
@@ -20,7 +20,7 @@ const cursos = [
         costo: "$ 800 por mes",
         docente: "Brian Lechini",
         whatsapp: "59898499705",
-        imagen: "../assets/flyers/dibujo-a-historia.jpg"
+        imagen: "./assets/flyers/dibujo-a-historia.jpg"
     },
 
     {
@@ -31,7 +31,7 @@ const cursos = [
         costo: "$ 800 por mes",
         docente: "Fany Acosta",
         whatsapp: "59892240132",
-        imagen: "../assets/flyers/dibujo-y-pintura.jpg"
+        imagen: "./assets/flyers/dibujo-y-pintura.jpg"
     },
     {
         nombre: "Trabajos en yeso",
@@ -41,7 +41,7 @@ const cursos = [
         costo: "$ 850 estimado",
         docente: "Verónica Janavel",
         whatsapp: "59898806186",
-        imagen: "../assets/flyers/yeso.png"
+        imagen: "./assets/flyers/yeso.png"
     }
 ];
 

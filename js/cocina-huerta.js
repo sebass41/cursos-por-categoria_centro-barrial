@@ -9,7 +9,7 @@ const cursos = [
         costo: "$ 500",
         docente: "Cristina Valiente",
         whatsapp: "59898172421",
-        imagen: "../assets/flyers/huerta-mesa.jpg"
+        imagen: "./assets/flyers/huerta-mesa.jpg"
     },
 
     {
@@ -20,7 +20,7 @@ const cursos = [
         costo: "$ 200 por clase",
         docente: "Catherine Command",
         whatsapp: "59891219118",
-        imagen: "../assets/flyers/pequenos-chefs.jpg"
+        imagen: "./assets/flyers/pequenos-chefs.jpg"
     }
 ];
 

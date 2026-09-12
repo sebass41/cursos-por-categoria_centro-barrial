@@ -9,7 +9,7 @@ const cursos = [
         costo: "$ 800 por mes o $ 180 por clase",
         docente: "Jessica Barolin",
         whatsapp: "59899000870",
-        imagen: "../assets/flyers/funcional.jpeg"
+        imagen: "./assets/flyers/funcional.jpeg"
     },
 
     {
@@ -20,7 +20,7 @@ const cursos = [
         costo: "$ 1800 por mes",
         docente: "Marcelo Morales",
         whatsapp: "5989397522",
-        imagen: "../assets/flyers/taekwondo.jpeg"
+        imagen: "./assets/flyers/taekwondo.jpeg"
     }
 ];
 

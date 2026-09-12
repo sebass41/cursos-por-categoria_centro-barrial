@@ -9,7 +9,7 @@ const cursos = [
         costo: "$ 1400 por mes",
         docente: "Marianella Rodriguez",
         whatsapp: "59899764461",
-        imagen: "../assets/flyers/guitarra.jpg"
+        imagen: "./assets/flyers/guitarra.jpg"
     },
 
     {
@@ -20,7 +20,7 @@ const cursos = [
         costo: "$ 800 por mes",
         docente: "Marianella Rodriguez",
         whatsapp: "59899764461",
-        imagen: "../assets/flyers/coro-ninos.jpg"
+        imagen: "./assets/flyers/coro-ninos.jpg"
     },
 
     {
@@ -31,7 +31,7 @@ const cursos = [
         costo: "$ 1500 taller entero",
         docente: "Pedro Sirito",
         whatsapp: "59893876556",
-        imagen: "../assets/flyers/murga.jpeg"
+        imagen: "./assets/flyers/murga.jpeg"
     },
 
     {
@@ -42,7 +42,7 @@ const cursos = [
         costo: "$ 1600 por mes",
         docente: "Leandro Giribone",
         whatsapp: "59899319585",
-        imagen: "../assets/flyers/musica-giribone.png"
+        imagen: "./assets/flyers/musica-giribone.png"
     }
 ];
 
