@@ -1,7 +1,3 @@
-/* =========================
-   ESTILOS GENERALES
-========================= */
-
 :root {
     --azul-principal: #063b8f;
     --azul-oscuro: #052b67;
@@ -14,362 +10,67 @@
     --verde-whatsapp: #20b858;
 }
 
-* {
-    box-sizing: border-box;
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f9fd; color: var(--texto); font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+a { text-decoration: none; }
+.site-header { background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-principal)); color: var(--blanco); }
+.eyebrow { font-size: .82rem; font-weight: 800; letter-spacing: .08em; opacity: .9; }
+.page-title { font-size: clamp(2.1rem, 8vw, 3.6rem); font-weight: 850; line-height: 1; }
+.page-subtitle { font-size: 1rem; opacity: .88; }
+.back-link { color: white; font-weight: 700; opacity: .9; }
+.back-link:hover { color: white; opacity: 1; }
+.category-card { min-height: 150px; display: flex; align-items: center; gap: 1rem; position: relative; padding: 1.25rem; background: white; border: 1px solid var(--borde); border-radius: 20px; color: var(--texto); box-shadow: 0 8px 25px rgba(5,43,103,.08); transition: transform .18s ease, box-shadow .18s ease; }
+.category-card:hover { color: var(--texto); transform: translateY(-4px); box-shadow: 0 14px 32px rgba(5,43,103,.14); }
+.category-card h2 { font-size: 1.15rem; font-weight: 800; margin: 0 2rem .35rem 0; }
+.category-card p { color: var(--gris); font-size: .9rem; margin: 0; }
+.category-icon { flex: 0 0 52px; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 15px; background: var(--azul-claro); color: var(--azul-principal); font-size: 1.55rem; }
+.category-arrow { position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--azul-principal); }
+.section-kicker { color: var(--azul-principal); font-size: .8rem; font-weight: 850; letter-spacing: .1em; }
+.section-heading h2 { font-size: clamp(1.7rem, 6vw, 2.5rem); font-weight: 800; margin: .25rem 0 .5rem; }
+.section-heading p { color: var(--gris); max-width: 600px; margin: 0 auto; }
+.carousel-inner { padding: 0 0 3.5rem; }
+.course-card { width: min(100%, 900px); margin: 0 auto; background: white; border: 1px solid var(--borde); border-radius: 22px; overflow: hidden; box-shadow: 0 14px 40px rgba(5,43,103,.12); }
+.flyer-wrapper { background: #dceeff; padding: 10px; }
+.flyer-wrapper img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 15px; }
+.no-image { aspect-ratio: 1 / 1; border-radius: 15px; display: grid; place-items: center; align-content: center; gap: .5rem; color: var(--gris); background: #edf4fb; font-size: 3rem; }
+.no-image span { font-size: 1rem; }
+.course-info { padding: 1.2rem; }
+.course-category { display: inline-block; background: var(--azul-claro); color: var(--azul-principal); font-size: .75rem; font-weight: 800; border-radius: 50px; padding: .4rem .75rem; margin-bottom: .65rem; }
+.course-title { font-size: clamp(1.45rem, 6vw, 2.1rem); font-weight: 800; margin-bottom: .55rem; }
+.course-description { color: var(--gris); margin-bottom: 1rem; }
+.course-data { display: grid; gap: .7rem; margin-bottom: 1.15rem; }
+.data-row { display: flex; align-items: center; gap: .75rem; color: #344054; }
+.data-icon { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; border-radius: 50%; background: var(--azul-claro); color: var(--azul-principal); font-size: 1.1rem; }
+.data-label { display: block; color: var(--gris); font-size: .74rem; font-weight: 700; line-height: 1.1; }
+.data-value { font-weight: 700; }
+.whatsapp-btn { width: 100%; min-height: 54px; border: 0; border-radius: 14px; background: var(--verde-whatsapp); color: white; font-size: 1.05rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: .55rem; transition: transform .15s ease, filter .15s ease; }
+.whatsapp-btn:hover, .whatsapp-btn:focus-visible { color: white; filter: brightness(.94); transform: translateY(-1px); }
+.whatsapp-btn i { font-size: 1.35rem; }
+.carousel-control-prev, .carousel-control-next { width: 42px; height: 42px; top: 45%; transform: translateY(-50%); border-radius: 50%; background: var(--azul-principal); opacity: 1; }
+.carousel-control-prev { left: -7px; } .carousel-control-next { right: -7px; }
+.carousel-control-prev-icon, .carousel-control-next-icon { width: 1.1rem; height: 1.1rem; }
+.carousel-indicators { bottom: 0; margin-bottom: 0; gap: .25rem; }
+.carousel-indicators [data-bs-target] { width: 9px; height: 9px; border: 0; border-radius: 50%; background-color: #9bb5d3; opacity: 1; }
+.carousel-indicators .active { background-color: var(--azul-principal); }
+.empty-state { max-width: 600px; margin: 2rem auto; text-align: center; background: white; padding: 3rem 1.5rem; border-radius: 20px; border: 1px solid var(--borde); }
+.empty-state i { color: var(--azul-principal); font-size: 3rem; }
+.empty-state h2 { font-size: 1.4rem; font-weight: 800; margin: 1rem 0 .5rem; }
+.empty-state p { color: var(--gris); margin: 0; }
+.site-footer { margin-top: 2rem; background: var(--azul-oscuro); color: white; }
+.site-footer p { font-weight: 800; } .site-footer small { opacity: .75; }
+@media (min-width: 768px) {
+    .course-card { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr); align-items: stretch; }
+    .flyer-wrapper { padding: 14px; }
+    .flyer-wrapper img { height: 100%; object-fit: cover; }
+    .course-info { display: flex; flex-direction: column; justify-content: center; padding: 2rem; }
+    .carousel-control-prev { left: -55px; } .carousel-control-next { right: -55px; }
+}
+@media (max-width: 420px) {
+    .carousel-control-prev, .carousel-control-next { width: 36px; height: 36px; }
+    .carousel-control-prev { left: 4px; } .carousel-control-next { right: 4px; }
+    .flyer-wrapper { padding: 7px; } .course-info { padding: 1rem; }
 }
 
 body {
-    margin: 0;
-    background: #f5f9fd;
-    color: var(--texto);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-}
-
-.site-header {
-    background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-principal));
-    color: var(--blanco);
-}
-
-.eyebrow {
-    font-size: 0.82rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    opacity: 0.9;
-}
-
-.page-title {
-    font-size: clamp(2.1rem, 8vw, 3.6rem);
-    font-weight: 850;
-    line-height: 1;
-}
-
-.page-subtitle {
-    font-size: 1rem;
-    opacity: 0.88;
-}
-
-.section-kicker {
-    color: var(--azul-principal);
-    font-size: 0.8rem;
-    font-weight: 850;
-    letter-spacing: 0.1em;
-}
-
-.section-heading h2 {
-    font-size: clamp(1.7rem, 6vw, 2.5rem);
-    font-weight: 800;
-    margin: 0.25rem 0 0.5rem;
-}
-
-.section-heading p {
-    color: var(--gris);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* =========================
-   TARJETA DEL CURSO
-========================= */
-
-.carousel-inner {
-    padding: 0 0 3.5rem;
-}
-
-.course-card {
-    width: min(100%, 850px);
-    margin: 0 auto;
-    background: var(--blanco);
-    border: 1px solid var(--borde);
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 14px 40px rgba(5, 43, 103, 0.12);
-}
-
-.flyer-wrapper {
-    background: #dceeff;
-    padding: 10px;
-}
-
-.flyer-wrapper img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.course-info {
-    padding: 1.2rem;
-}
-
-.course-category {
-    display: inline-block;
-    background: var(--azul-claro);
-    color: var(--azul-principal);
-    font-size: 0.75rem;
-    font-weight: 800;
-    border-radius: 50px;
-    padding: 0.4rem 0.75rem;
-    margin-bottom: 0.65rem;
-}
-
-.course-title {
-    font-size: clamp(1.45rem, 6vw, 2.1rem);
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-
-.course-data {
-    display: grid;
-    gap: 0.7rem;
-    margin-bottom: 1.15rem;
-}
-
-.data-row {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: #344054;
-}
-
-.data-icon {
-    width: 38px;
-    height: 38px;
-    flex: 0 0 38px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--azul-claro);
-    color: var(--azul-principal);
-    font-size: 1.1rem;
-}
-
-.data-label {
-    display: block;
-    color: var(--gris);
-    font-size: 0.74rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.data-value {
-    font-weight: 700;
-}
-
-.whatsapp-btn {
-    width: 100%;
-    min-height: 54px;
-    border: 0;
-    border-radius: 14px;
-    background: var(--verde-whatsapp);
-    color: var(--blanco);
-    font-size: 1.05rem;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.55rem;
-    text-decoration: none;
-    transition: transform 0.15s ease, filter 0.15s ease;
-}
-
-.whatsapp-btn:hover,
-.whatsapp-btn:focus-visible {
-    color: var(--blanco);
-    filter: brightness(0.94);
-    transform: translateY(-1px);
-}
-
-.whatsapp-btn i {
-    font-size: 1.35rem;
-}
-
-/* =========================
-   CONTROLES DEL CARRUSEL
-========================= */
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 42px;
-    height: 42px;
-    top: 45%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background: var(--azul-principal);
-    opacity: 1;
-}
-
-.carousel-control-prev {
-    left: -7px;
-}
-
-.carousel-control-next {
-    right: -7px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 1.1rem;
-    height: 1.1rem;
-}
-
-.carousel-indicators {
-    bottom: 0;
-    margin-bottom: 0;
-    gap: 0.25rem;
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 9px;
-    height: 9px;
-    border: 0;
-    border-radius: 50%;
-    background-color: #9bb5d3;
-    opacity: 1;
-}
-
-.carousel-indicators .active {
-    background-color: var(--azul-principal);
-}
-
-/* =========================
-   CAJA INFORMATIVA
-========================= */
-
-.info-box {
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    background: var(--azul-claro);
-    border: 1px solid #c9def5;
-    border-radius: 18px;
-    padding: 1rem 1.1rem;
-}
-
-.info-icon {
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--azul-principal);
-    color: var(--blanco);
-    font-size: 1.2rem;
-}
-
-.info-box h2 {
-    font-size: 1rem;
-    font-weight: 800;
-    margin-bottom: 0.2rem;
-}
-
-.info-box p {
-    color: #475467;
-    font-size: 0.9rem;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-.site-footer {
-    margin-top: 2rem;
-    background: var(--azul-oscuro);
-    color: var(--blanco);
-}
-
-.site-footer p {
-    font-weight: 800;
-}
-
-.site-footer small {
-    opacity: 0.75;
-}
-
-/* =========================
-   DESKTOP
-========================= */
-
-@media (min-width: 768px) {
-    .course-card {
-        display: grid;
-        grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
-        align-items: stretch;
-    }
-
-    .flyer-wrapper {
-        padding: 14px;
-    }
-
-    .flyer-wrapper img {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .course-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem;
-    }
-
-    .whatsapp-btn {
-        margin-top: 0.4rem;
-    }
-
-    .carousel-control-prev {
-        left: -55px;
-    }
-
-    .carousel-control-next {
-        right: -55px;
-    }
-}
-
-@media (max-width: 420px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 36px;
-        height: 36px;
-    }
-
-    .carousel-control-prev {
-        left: 4px;
-    }
-
-    .carousel-control-next {
-        right: 4px;
-    }
-
-    .flyer-wrapper {
-        padding: 7px;
-    }
-
-    .course-info {
-        padding: 1rem;
-    }
-}
-
-.categoria-card {
-    border: none;
-    border-radius: 18px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.categoria-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
-}
-
-.categoria-icon {
-    font-size: 3rem;
-    color: #0d6efd;
-}
-
-.categoria-card h2 {
-    color: #12345b;
+    background: linear-gradient(135deg, var(--azul-claro), var(--blanco));
 }
